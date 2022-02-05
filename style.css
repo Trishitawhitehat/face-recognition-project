@@ -1,0 +1,32 @@
+body {
+    background-color: violet;
+    font-variant: small-caps;
+}
+#name1 {
+    background: blueviolet;
+    color: white;
+}
+#name2 {
+    background: blueviolet;
+    color: white;
+}
+#webcam_view {
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}
+#take_picture {
+    background: blueviolet;
+    color: white;
+    border-style: solid;
+    width: 180px;
+    height: 40px;
+}
+
+#identify_picture {
+    background: blueviolet;
+    color: white;
+    border-style: solid;
+    width: 180px;
+    height: 40px;
+}

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+  <title>Image Recognition Web App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <! –– https://teachablemachine.withgoogle.com/models/R-r9qKPNq/ -->
+    <center>
+    <div class="container">
+        <h1 id="title">Face Recognition Web App</h1>
+            <p style="font-size: 22px;">Model is trained to identify the following persons: </p>  
+            <div id="name1">
+                <hr>
+                Brother
+                <hr>
+            </div>
+                <hr>
+                <div id="name2">
+                    <hr>
+                Me
+                <hr>
+            </div>
+            <h5>Webcam View - </h5>
+            <div id="webcam_view"></div>
+            <br>
+            <div id="result"></div>
+            <br>
+            <button onclick="take_picture()" id="take_picture">Capture Image</button>
+            <br>
+            <br>
+            <button onclick="identify_picture()" id="identify_picture">Identify Image</button>
+            <br>
+            <br>
+            <p style="font-size: 22px;">Person : <span id="result_object_name"></span> </p>
+            <p style="font-size: 22px;">Accuracy : <span id="result_object_accuracy"></span> </p>
+            </center>
+    </div>
+    <script src="main.js"></script>
+</body>
